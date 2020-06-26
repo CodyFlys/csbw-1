@@ -1,0 +1,79 @@
+body {
+  background-color: black;
+}
+
+@keyframes  random {
+  10% { background-color: rgb(255, 0, 0); } 
+  20% { background-color: rgb(255, 238, 0); } 
+  30% { background-color: rgb(9, 255, 0); } 
+  40% { background-color: rgb(0, 225, 255); }
+  50% { background-color: rgb(255, 145, 0); }
+  60% { background-color: rgb(247, 0, 255); }
+  70% { background-color: rgb(47, 0, 255); }
+  80% { background-color: rgb(41, 149, 135); }
+  90% { background-color: rgb(255, 0, 34); }
+  100% { background-color: rgb(140, 0, 255); }
+}
+  
+.box {
+  display: inline-block;       
+  border: 1px solid rgb(0, 0, 0);
+  width: 15px;
+  height: 15px;
+  margin-left: -1px;
+  margin-bottom: -1px;
+  }
+
+.off {
+  background-color: rgb(36, 32, 32);
+}
+
+.on {
+  -webkit-animation: random 1.5s infinite;
+  animation: random 1.5s infinite;
+}
+
+
+  
+.box:hover { 
+  -webkit-animation: random 1.5s infinite;
+  animation: random 1.5s infinite;
+}
+
+.center {
+  margin: auto;
+  display: table;
+  margin-top: 10px;
+}
+
+.grid {
+  width: 100%;
+  line-height: 0;
+  margin: auto;
+  margin-top: 20px;
+}
+  
+h1, h2, h3, h4 {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  margin: auto;
+  text-align: center;
+  width: 50%;
+  margin-top: 10px;
+}
+
+h4 {
+  margin-top: 0px;
+}
+
+.btn {
+  background-color: white;
+  border-radius: 5px;
+  font-size: large;
+  width: 100%;
+}
+
+.rules {
+  line-height: 30px;
+  font-size: 14px;
+}
